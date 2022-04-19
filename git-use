@@ -1,0 +1,23 @@
+#Make your folder into a Git-manageable repository by using git init.
+#After entering instruction, you'll find a .git folder and it uses to track and manage repositories.
+#If you can't see it because it's hidden by default, then you need to make it visible.  
+git init
+
+#Paste your project into the local Git repository
+#use git status to check 
+#use git add . to add all your files into repository
+#use git status to check again 
+#git commit -m "description",this command help to commit your files in repository
+#But make sure you have make the SSH KEY since the transfer between the local Git repository and Github repository is encrypted over SSH   
+git add  
+
+#After commit your files, associate the Github repository with our local repository and the command line shows like this:
+git remote add origin http://xxxx      # Note that Origin is followed by the location of the repository you created on Github
+
+#All files from the local repository has been pushed to the remote repository (aka Github)  
+git push -u origin master(this is branch name that you can select yours instead,see more:https://blog.csdn.net/qq_36079972/article/details/100279562) 
+git push origin master
+
+
+
+that's all i've leanred from this writer , if want see more,check here: https://cloud.tencent.com/developer/article/1504684
